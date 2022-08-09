@@ -117,8 +117,11 @@
     <h2>Miscellaneous Control Panel</h2>
     <br>
     <div class="form-group"><a href="/createNewsletter1" class="btn btn-default navbar-btn" style="background-color: darkgreen; color:white">Create Newsletter</a></div>
-    <form method="GET" action="/downloadSignedUpEmails">
-        <div class="form-group"><input type="submit" class="btn btn-default navbar-btn" style="background-color: darkgreen; color:white" value="Download Roster" /></div>
+    <form method="GET" action="/downloadFullDelegateRoster">
+        <div class="form-group"><input type="submit" class="btn btn-default navbar-btn" style="background-color: darkgreen; color:white" value="Download Delegate Roster" /></div>
+    </form>
+    <form method="GET" action="/downloadFullSchoolList">
+        <div class="form-group"><input type="submit" class="btn btn-default navbar-btn" style="background-color: darkgreen; color:white" value="Download School List" /></div>
     </form>
     <div style="background-color: whitesmoke; margin: 16px; padding: 16px">
     <form action="/uploadNewsletter" method="POST" enctype="multipart/form-data">
