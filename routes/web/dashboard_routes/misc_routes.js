@@ -68,7 +68,11 @@ router.get("/downloadFullSchoolList", async function(req, res, next){
     docs.forEach(function(doc){
       schoolData.push({
         "school" : doc.schoolName,
-        "state" : doc.state
+        "state" : doc.state,
+        "club" : doc.clubName,
+        "facAdvName" : doc.clubFacAdvName,
+        "facAdvEmail" : doc.clubFacAdvEmail,
+        "socMedia" : doc.primSocMedia
       });
   });
   });
