@@ -1,0 +1,65 @@
+<%- include ("../../_partials/_header.ejs"); %>
+<%- include ("../../_partials/dashboard_partials/dashboard_css.ejs"); %>
+<div class="topPic4">
+	<%- include ("../../_partials/_top_nav.ejs"); %>
+</div>
+<div class="welcomeText">National High School Climate Forum Committee Member Dashboard</div>
+</div>
+<div class="container">
+	<div class="container">
+
+		<ul class="nav nav-tabs CMToggleButtons">
+			<li class="active">
+				<a class="CMToggleButtons" data-toggle="tab"
+				href="#announcements">Announcements</a>
+			</li>
+			<li>
+				<a class="CMToggleButtons" data-toggle="tab"
+				href="#resources">Important Resources</a>
+			</li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="announcements" class="tab-pane fade in active">
+				<section>
+					<div class="container">
+						<div class="row">
+							<div style="min-height: 1100px; width:70%">
+								<% activePosts.forEach(function(post){%>
+									<div class="comment float-left" style="width: 100%; border-color: darkgreen; border-width: 2px; margin-top: 5px;"> 
+										<h4><%=post.title%></h4> 
+										<h5><%=post.createdAt%></h5>
+										<br/>
+										<p><%- post.content%></p>
+									</div>
+								
+									<%comments.forEach(function(comment){%>
+										<% if(post.title == comment.announcement){%>
+											<div style="padding: 5px; width: 90%; background-color: rgb(253, 253, 253); float:right; border-color: darkgreen; border-radius: 5px; border-style: solid; border-width: 1px; overflow-wrap:break-word">
+											<h5 style="font-size: 14px; color: black;"><%=comment.user%> : <%=comment.title%></h5>
+											<h5 style="font-size: 14px; color: black; padding-bottom: 5px;"><%=comment.createdAt%></h5>
+											
+											<p><%- comment.content%></p>
+											</div>
+										<%}%>
+									<%})%>
+									
+								<%})%>
+							</div>
+							</div>
+					</div>
+				</section>
+			</div>
+			<div id="resources" class="tab-pane fade">
+				<section>
+					<div class="container">
+						<div class="row">
+							<%- include ("./resources.ejs"); %>			
+						</div>
+					</div>
+				</section>
+			</div>
+</div>
+</div>
+
+<%- include ("../../_partials/_footer.ejs"); %>

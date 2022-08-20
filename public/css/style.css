@@ -1,10 +1,11 @@
-    .navText{
+.navText{
   color: white;
   font-size: 24px;
   font: bold;
 }
 
 .welcomeText{
+  position: relative;  
   color: white;
   font: bold;
   font-size: 80px;
@@ -13,6 +14,7 @@
   text-align: center;
   vertical-align: middle;
   padding: 50px;
+  overflow: hidden;
 }
 
 .welcomeText2{

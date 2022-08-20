@@ -12,13 +12,12 @@ var fs = require('fs');
 //var routes = require("./routes");
 
 var app = express();
-//mongoose.connect(params.DEVDBCONN, {useUnifiedTopology:true, useNewUrlParser:true, useCreateIndex:true});
-mongoose.connect(params.DATABASECONNECTION, {useUnifiedTopology:true, useNewUrlParser:true, useCreateIndex:true});
+mongoose.connect(params.DEVDBCONN, {useUnifiedTopology:true, useNewUrlParser:true, useCreateIndex:true});
+//mongoose.connect(params.DATABASECONNECTION, {useUnifiedTopology:true, useNewUrlParser:true, useCreateIndex:true});
 setUpPassport();
 
 app.set("port", process.env.PORT || 3001);
 
-app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.use('/public', express.static('public'));
@@ -37,7 +36,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 
-app.use("/", require("./routes/web"));
+app.use("/", require("./src"));
 
 app.use("/css", express.static(__dirname + './views/css'));
 
