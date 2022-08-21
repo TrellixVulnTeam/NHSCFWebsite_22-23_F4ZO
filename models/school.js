@@ -9,7 +9,7 @@ var schoolSchema = mongoose.Schema({
     clubFacAdvName:{type:String, required:false},
     clubFacAdvEmail:{type:String, required:false},
     state:{type:String, required:true, default:" "},
-    primSocMedia:{type:String, required:false},
+    socMedia:{type:String, required:false},
     createdAt:{type:Date, default:Date.now}
 });
 

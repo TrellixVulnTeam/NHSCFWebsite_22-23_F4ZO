@@ -1,0 +1,64 @@
+/*Event Page CSS*/
+
+.eventRow{
+    padding: 10px;
+    float: left;  
+    width:100%;
+    margin-bottom:20px; 
+    height:auto;
+    background-color: whitesmoke;
+    border-radius: 25px;
+  }
+  
+  .eventPic{
+    float: left; 
+    height:auto;
+    width:300px;
+    padding-right: 15px;
+    border-radius: 25px;
+  }
+  
+  .eventName{
+    color: darkgreen;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top:0px;
+  }
+  
+  .eventDescription{
+    font-size: 16px;
+    padding-bottom: 15px;
+    overflow-wrap: break-word;
+    color: black;
+    margin-top: 0px;
+  }
+  
+  .eventInfo{
+    float: left; 
+    height:auto;
+    width:50%;
+    padding-right: 15px;
+    border-radius: 25px;
+  }
+  
+  .eventDate{
+    font-size: 24px;
+    color: darkgreen;
+    float: left;
+    margin-top: 0px;
+  }
+  
+  .eventRegisterButton{
+    position: absolute;
+    margin-top:100px;
+    right: 100px;
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: darkgreen;
+    color: white;
+    border-color: darkgreen;
+    border-radius: 10px;
+    box-shadow: darkgreen;
+    
+  }

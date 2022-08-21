@@ -1,0 +1,125 @@
+/*Home Page CSS*/
+
+.welcomeText{
+    position: relative;  
+    color: white;
+    font: bold;
+    font-size: 80px;
+    font-weight: 5px;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+    overflow: hidden;
+  }
+  
+  .mainAboutCont{
+    background-color:white;
+    width:100% - 10px;
+    align-self: center;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:5px;
+    height:608px;
+  }
+  
+  .mainAboutPic{
+    background-color:white;
+    border-style:solid;
+    border-width:20px;
+    border-color:whitesmoke;
+    width:48%;
+    float:left;
+    vertical-align: middle;
+    line-height: normal;
+    height:600px;
+  }
+  
+  .mainAboutInfo{
+    background-color:white;
+    width:48%;
+    float:right;
+    height:600px;
+  }
+  
+  .aboutToggleButtons{
+    background-color: white;
+    color: black;
+    border-color: darkgreen;
+    border-width: 3px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    font-family: 'Trebuchet MS';
+    font-style: bold;
+    font-size: 14px;
+    border-style: solid;
+  }
+  
+  .homePageGetInvolved{
+    padding-top: 10px;
+    text-align: center;
+  }
+  
+  .homePageRegisterButtons1{
+    color: white;
+    background-image:url("/../public/core/homepagepic2.jpg");
+    border-color: darkgreen;
+    border-style: solid;
+    border-radius: 15px;
+    width: 600px;
+    height: 200px;
+    font-family: 'Trebuchet MS';
+    font-size: 36px;
+    font: bold;
+  
+  }
+  .homePageRegisterButtons2{
+    color: white;
+    background-image:url("/../public/core/homepagepic3.jpg");
+    border-color: darkgreen;
+    border-style: solid;
+    border-radius: 15px;
+    margin-right:8px;
+    width: 600px;
+    height: 200px;
+    font-family: 'Trebuchet MS';
+    font-size: 36px;
+    font: bold;
+  
+  }
+  .homePageRegisterButtons3{
+    color: white;
+    background-image:url("/../public/core/homepagepic4.jpg");
+    border-color: darkgreen;
+    border-style: solid;
+    border-radius: 15px;
+    width: 600px;
+    height: 200px;
+    font-family: 'Trebuchet MS';
+    font-size: 36px;
+    font: bold;
+  
+  }
+  .homePageRegisterButtons4{
+    color: white;
+    background-image:url("/../public/core/homepagepic5.jpg");
+    border-color: darkgreen;
+    border-style: solid;
+    border-radius: 15px;
+    margin-right:8px;
+    width: 600px;
+    height: 200px;
+    font-family: 'Trebuchet MS';
+    font-size: 36px;
+    font: bold;
+  
+  }
+  
+  .aboutToggleButtons:focus{
+    background-color: darkgreen;
+    color: white;
+    border-color: darkgreen;
+    border-style: solid;
+  }

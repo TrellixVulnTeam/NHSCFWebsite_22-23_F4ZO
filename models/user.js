@@ -12,7 +12,8 @@ var userSchema = mongoose.Schema({
     password:{type:String, required:false},
     schoolName:{type:String, required:true},
     admin:{type:Boolean, required:true, default:false},
-    createdAt:{type:Date, default:Date.now}
+    createdAt:{type:Date, default:Date.now},
+    token:{type:String, required:true}
 });
 
 userSchema.pre("save", function(next){
